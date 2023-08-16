@@ -1,66 +1,71 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Aplikasi Translate Bahasa Osing ke Bahasa Indonesia
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Aplikasi ini adalah sebuah sistem sederhana yang menggunakan framework Laravel dan Bootstrap untuk menerjemahkan teks dari Bahasa Osing, bahasa daerah suku Osing di Banyuwangi, Jawa Timur, ke dalam Bahasa Indonesia. Aplikasi ini juga dilengkapi dengan fitur login dan register, serta konten informasi tentang budaya, makanan, dan tempat wisata di Banyuwangi.
 
-## About Laravel
+## Fitur
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Login dan Register:**
+  - Pengguna dapat mendaftar dan melakukan login sebagai admin atau user biasa.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Dashboard Admin:**
+  - Menambah, mengedit, dan menghapus konten informasi tentang budaya, makanan, dan tempat wisata.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Dashboard User:**
+  - Melihat konten informasi tentang budaya, makanan, dan tempat wisata.
+  - Mengakses fitur penerjemahan dari Bahasa Osing ke Bahasa Indonesia.
 
-## Learning Laravel
+- **Fitur Translate:**
+  - Pengguna dapat memasukkan teks dalam Bahasa Osing.
+  - Aplikasi akan menerjemahkan teks tersebut ke dalam Bahasa Indonesia.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Teknologi yang Digunakan
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- Bahasa Pemrograman: PHP (Laravel)
+- Frontend Framework: Bootstrap 5
+- Database: MySQL
+- Terjemahan Bahasa: Menggunakan API Bahasa Google Translate
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Cara Penggunaan
 
-## Laravel Sponsors
+1. **Login atau Register:**
+   - Pengguna harus melakukan login atau mendaftar terlebih dahulu menggunakan username dan password.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+2. **Dashboard Admin:**
+   - Setelah login sebagai admin, Anda dapat mengelola konten informasi.
 
-### Premium Partners
+3. **Dashboard User:**
+   - Setelah login sebagai user, Anda dapat melihat konten informasi dan menggunakan fitur terjemahan.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+4. **Fitur Translate:**
+   - Masukkan teks dalam Bahasa Osing ke dalam kotak terjemahan.
+   - Klik tombol "Terjemahkan" untuk mendapatkan hasil terjemahan.
 
-## Contributing
+## Cara Menjalankan Aplikasi
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. Pastikan Anda telah menginstal Laravel di komputer Anda.
 
-## Code of Conduct
+2. Clone repositori ini ke dalam direktori kerja Anda.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+3. Buat database MySQL dengan nama yang sesuai (misalnya `db_translate`).
 
-## Security Vulnerabilities
+4. Impor file `database.sql` ke dalam database yang telah Anda buat.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+5. Konfigurasi koneksi ke database dengan mengubah informasi di file `.env`.
 
-## License
+6. Anda juga perlu mendapatkan API Key dari Google Translate untuk menggunakan fitur terjemahan.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+7. Buka terminal, arahkan ke direktori aplikasi, dan jalankan perintah `php artisan serve`.
+
+8. Buka aplikasi melalui web browser dengan mengakses `http://localhost:8000`.
+
+## Kontribusi
+
+Jika Anda ingin berkontribusi untuk meningkatkan aplikasi ini, silakan melakukan pull request dan kami akan dengan senang hati melihatnya.
+
+## Lisensi
+
+Aplikasi ini dilisensikan di bawah [MIT License](LICENSE).
+
+---
+
+Dibuat dengan ❤️ oleh dindarosalin
