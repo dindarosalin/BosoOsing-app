@@ -67,5 +67,3 @@ Jika Anda ingin berkontribusi untuk meningkatkan aplikasi ini, silakan melakukan
 Aplikasi ini dilisensikan di bawah [MIT License](LICENSE).
 
 ---
-
-Dibuat dengan ❤️ oleh dindarosalin
